@@ -18,14 +18,14 @@ const App = () => {
     }, [currentId, dispatch]);
 
     return (
-        <Container maxWidth="xlg">
+        <Container maxWidth="xl">
             <AppBar className={classes.appBar} position="sticky" color="secondary">
                 <Typography className={classes.heading} variant="h2" align="center">ReminDr</Typography>
                 <img className={classes.image} src={memories} alt="icon" height="60" />
             </AppBar>
             <Grow in>
                 <Container>
-                    <Grid container justify="space-between" alignItems="stretch" spacing={3}>
+                    <Grid className={classes.mainContainer} container justifyContent="space-between" alignItems="stretch" spacing={3}>
                         <Grid item xs={12} sm={7}>
                             <Posts setCurrentId={setCurrentId} />
                         </Grid>
