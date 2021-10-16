@@ -19,7 +19,7 @@ const App = () => {
 
     return (
         <Container maxWidth="xl">
-            <AppBar className={classes.appBar} position="sticky" color="secondary">
+            <AppBar className={classes.appBar} position="sticky" >
                 <Typography className={classes.heading} variant="h2" align="center">ReminDr</Typography>
                 <img className={classes.image} src={memories} alt="icon" height="60" />
             </AppBar>
